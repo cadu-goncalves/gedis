@@ -9,4 +9,4 @@ package com.globo.bigdata.gedis.settings
  * @param socketTimeout socket timeout
  * @param connectionTimeout connection timeout
  */
-case class SingleSettings(host: String = "localhost", port: Int = 6379, password: Option[String] = DefaultSettings.password, socketTimeout: Int = DefaultSettings.socketTimeout, connectionTimeout : Int = DefaultSettings.connectionTimeout) {}
+final case class SingleSettings(host: String = "localhost", port: Int = 6379, password: Option[String] = DefaultSettings.password, socketTimeout: Int = DefaultSettings.socketTimeout, connectionTimeout : Int = DefaultSettings.connectionTimeout) {}
